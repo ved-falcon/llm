@@ -11,7 +11,7 @@ try:
     openai.api_key = os.getenv("OPENAI_API_KEY")
 
     # Load documents from the directory and create an index on them
-    documents = SimpleDirectoryReader("C:\\Users\\ved\\falcon\\llm\\data").load_data()
+    documents = SimpleDirectoryReader("C:\\path\\to\\documents").load_data()
     index = VectorStoreIndex.from_documents(documents)
 
     # Question to ask the LLM
